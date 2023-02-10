@@ -33,7 +33,7 @@ function venda() {
 }
 function aluno() {
 
-    const aluno = Number(document.getElementById("aluno").value);
+    let aluno = Number(document.getElementById("aluno").value);
 
     if (aluno < 0 || aluno > 10)
         alert("Nota Invalida!")
@@ -44,6 +44,18 @@ function aluno() {
             if (aluno >= 4 && aluno < 7)
                 alert("Aluno em Recuperacao")
             else
-                alert("Aluno Aprovado")
+                if (aluno >= 7 && aluno < 10)
+                    alert("Aluno Aprovado")
+                else { }
+                
 
 }
+function aluno2() {
+    let aluno2 = Number(document.getElementById("aluno2").value);
+    if (aluno2 < 5)
+        alert("Reprovado na Recuperacao!")
+    else
+        if (aluno2 > 5)
+            alert("Aprovado na Recuperacao")
+        else {}
+     }
