@@ -31,3 +31,19 @@ function venda() {
         alert("Comissao de 2%  =  " + resultado);
     }
 }
+function aluno() {
+
+    const aluno = Number(document.getElementById("aluno").value);
+
+    if (aluno < 0 || aluno > 10)
+        alert("Nota Invalida!")
+    else
+        if (aluno >= 0 && aluno < 4)
+            alert("Aluno Reprovado")
+        else
+            if (aluno >= 4 && aluno < 7)
+                alert("Aluno em Recuperacao")
+            else
+                alert("Aluno Aprovado")
+
+}
