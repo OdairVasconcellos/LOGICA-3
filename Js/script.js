@@ -42,20 +42,22 @@ function aluno() {
             alert("Aluno Reprovado")
         else
             if (aluno >= 4 && aluno < 7)
-                alert("Aluno em Recuperacao")
+                alert("Aluno em Recuperacao - Digite sua nota de Recuperacao")
             else
                 if (aluno >= 7 && aluno < 10)
                     alert("Aluno Aprovado")
                 else { }
-                
 
 }
 function aluno2() {
     let aluno2 = Number(document.getElementById("aluno2").value);
-    if (aluno2 < 5)
+
+    if (aluno2 <= 5)
         alert("Reprovado na Recuperacao!")
     else
-        if (aluno2 > 5)
+        if (aluno2 >= 5)
             alert("Aprovado na Recuperacao")
         else {}
-     }
+}
+
+
