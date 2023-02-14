@@ -31,33 +31,34 @@ function venda() {
         alert("Comissao de 2%  =  " + resultado);
     }
 }
+
+
 function aluno() {
 
     let aluno = Number(document.getElementById("aluno").value);
 
     if (aluno < 0 || aluno > 10)
         alert("Nota Invalida!")
+    else if (aluno >= 0 && aluno < 4)
+        alert("Aluno Reprovado")
+    else if (aluno >= 4 && aluno < 7)
+        alert("Aluno em Recuperacao - Digite sua nota de Recuperacao")
     else
-        if (aluno >= 0 && aluno < 4)
-            alert("Aluno Reprovado")
-        else
-            if (aluno >= 4 && aluno < 7)
-                alert("Aluno em Recuperacao - Digite sua nota de Recuperacao")
-            else
-                if (aluno >= 7 && aluno < 10)
-                    alert("Aluno Aprovado")
-                else { }
+        alert("Aluno Aprovado")
+
 
 }
 function aluno2() {
+    let aluno = Number(document.getElementById("aluno").value);
     let aluno2 = Number(document.getElementById("aluno2").value);
+    const resultado = aluno + aluno2;
 
-    if (aluno2 <= 5)
+
+    if (resultado <= 5)
         alert("Reprovado na Recuperacao!")
     else
-        if (aluno2 >= 5)
-            alert("Aprovado na Recuperacao")
-        else {}
+        alert("Aprovado na Recuperacao")
+
 }
 
 
